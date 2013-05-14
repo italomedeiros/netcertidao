@@ -1,0 +1,367 @@
+* { margin:0; padding:0;}
+
+body { color:#FFF; font-family: Arial; font-size:12px;}
+
+br{ margin:20px;}
+h1{ color:#FFF; font-size:20px;}
+h2{ color:#FFF; margin:17px 0 40px 0; font-size:19px;}
+h3{ margin-top:20px;}
+h2, h3, h4, h5, h6{ font-family: 'ABeeZee', sans-serif;}
+h4{ color:#1E6F46; font-size:42px;}
+h5{ color:#252525; font-size:24px;}
+h6{ color:#26B388; font-size:20px;}
+h7{ color:#1E6F46; font-weight: bold;}
+p{ margin:20px 15px 20px 15px;
+   line-height: 150%;  
+   text-align: justify;  
+}
+
+
+a{
+    font-family: 'ABeeZee', sans-serif;
+    font-size:16px;
+
+    margin:0;
+}
+
+li{ float:left; 
+    padding:31px 25px 30px 25px;
+    margin:0 0px 0 0px;
+    list-style:none;}
+
+li:hover{ list-style:none;}
+
+.tabela, .tabela2 , .tabela3 , .tabela4 , .tabela5 { padding:0 10px 0 10px; }
+.tabela{ background: url(../img/tabela.jpg); 
+         border-bottom:2px solid #228E66;
+}
+.tabela2{ background:url(../img/tabela2.jpg); border-bottom:2px solid #fff;}
+.tabela3{ background:url(../img/tabela3.jpg); border-bottom:2px solid #fff;}
+.tabela4{ background:url(../img/tabela4.jpg); }
+.tabela5{ background:url(../img/tabela5.jpg); }
+
+.font{ font-size:14px;}
+
+#content{
+    width:100%;
+    height:100%;
+    margin:0 auto;
+    left:0;
+}
+
+#header{ 
+    width:100%;
+    height:159px;
+    margin: 0 auto;
+    margin-top:10px;
+    margin-bottom:20px;
+    background:url(../img/header.jpg) center;
+
+}
+
+#principal{ 
+    width:100%;
+    margin: 0 auto;
+    background-color:#1C4615;
+
+}
+
+#bloco{ 
+    width:920px;	
+    height:100%;
+    float:left;
+    margin-bottom:40px;
+}
+
+#interna2{ 
+    width:920px;	
+    margin: 0 auto;
+}
+
+#conteudo{ 
+    width:861px;	
+    margin: 0 auto;
+    margin-bottom:20px;
+    padding:20px;
+    font-size:14px;
+    background:url(../img/conteudo.jpg) #fff no-repeat;
+    color:#5B5B5B;
+}
+
+#titulo{ width:861px; padding:20px 0 30px 0; border-bottom:1px #BFBFBF solid; margin-bottom:20px;}
+
+.left{margin-left:25px;}
+.float-r{ float:right;}
+.float-l{ float:left;}
+.m-top{ margin-top:20px;}
+
+#img{
+    width:290px;	
+    height:120px;
+    float:left;
+    margin:0px 0 25px 0;
+}
+
+.base-destaques{ 
+    width:280px;	
+    height:20px;
+    border-top: 1px #DBDBDB solid;
+    margin-top:20px;
+    padding-top:15px;
+    text-align:left;
+}
+
+#destaques{ 
+    color:#454545;
+    width:290px;
+    float:right;
+    background:url(../img/destaques.png) top no-repeat;
+    text-align:center;
+}
+
+#destaques p{ 
+    height: 280px;
+}
+
+#logo{
+    width:250px;
+    height:180px;
+    margin: 0 auto;
+}
+
+#menu{
+    text-align:center;
+    width: 750px;
+    padding-bottom:20px;
+    padding-left:170px;
+    border-bottom:0px solid #8B8B8B;
+    height:42px;
+    margin: 0 auto;
+    background:url(../img/menu.png);
+}
+
+#rodape{
+    width: 100%;
+    padding-top:5px;
+    height:125px;
+    float: left;
+    background:url(../img/rodape.png) no-repeat #165A41;
+}
+
+a.innerborder, a.innerborder img {
+    float:left;
+    overflow:hidden;
+}
+a.innerborder:hover {
+    border:4px solid #338000;
+}
+a.innerborder:hover img {
+    margin: -4px;
+}
+
+/* FORMULÁRIO */
+
+#content_login
+{
+    text-align: center;
+    width: 400px;
+    border: solid 2px;
+    margin: 0 auto;
+    background-image: url(../img/bgw.gif);
+}
+
+#tudo_login
+{
+    width: 400px;
+    margin: 0 auto;
+    height: auto;        
+}
+
+.bgw
+{
+    font: 16px arial;
+    color: #FFF;
+    background-color: #228E66;
+    padding-left: 13px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;    
+    border: solid 2px;
+
+}
+
+#captcha
+{
+    font:12px arial, verdana, helvetica, sans-serif;	
+    border-collapse:collapse;
+    color:#2F4F2F;	
+    font-weight: bold;
+    line-height: 150%;   
+    width: 600px;
+    margin: 0px auto;
+}
+#captcha input[type="text"]
+{
+    padding-top: 15px;
+    margin-bottom:10px;
+    background:url(../img/text-area.jpg);	
+    border:1px solid #338000;
+}
+
+#captcha p
+{
+    font:20px arial, verdana, helvetica, sans-serif;	
+    text-align: center;
+    margin-bottom:10px;
+    height:30px;
+    padding-left: 10px;  
+}
+
+#captcha input.botao {	
+    background:url(../img/botao.jpg);
+    width:100px;
+    color:#ffffff;
+    text-align:center;
+    border:2px solid #ffffff;
+    cursor: pointer;
+    height: 40px;
+}
+
+#cadform 
+{	
+    font:12px arial, verdana, helvetica, sans-serif;	
+    border-collapse:collapse;
+    color:#2F4F2F;	
+    font-weight: bold;
+    line-height: 150%;   
+}
+
+#cadform input[type="email"] {	
+    margin-bottom:10px;
+    height:20px;
+    background:url(img/text-area.jpg);	
+    border:1px solid #338000;	
+    padding-left: 10px;
+}
+
+
+#cadform input[type="text"] {	
+    margin-bottom:10px;
+    height:20px;
+    background:url(img/text-area.jpg);	
+    border:1px solid #338000;
+}
+
+#cadform input[type="password"] {	
+    margin-bottom:10px;
+    height:20px;
+    background:url(img/text-area.jpg);	
+    border:1px solid #338000;
+}
+
+#cadform input.botao {	
+    background:url(../img/botao.jpg);
+    width:90px;
+    color:#ffffff;
+    text-align:center;
+    border:2px solid #ffffff;
+    cursor: pointer;
+    height: 40px;
+}	
+#cadform input[type="tel"] {	
+    margin-bottom:10px;
+    height:20px;
+    background:url(img/text-area.jpg);	
+    border:1px solid #338000;	
+    padding-left: 10px;
+
+}
+
+#cadform th {
+    padding: 3px;
+    font: bold 15px arial, verdana, helvetica, sans-serif;
+}
+
+#cadform td {	
+    padding:3px;
+    line-height: 200%;
+}
+
+#cadform textarea {
+    width: 450px;
+    height:150px;
+    background:url(../img/text-area.jpg) top #fff repeat-x;	
+    border:1px solid #338000;	
+    padding: 10px 0 0 10px;
+}
+
+#todoform {	
+
+    font:12px arial, verdana, helvetica, sans-serif;	
+    border-collapse:collapse;
+    color:#ff9900;	
+}
+
+.check
+{	
+    font:12px arial, verdana, helvetica, sans-serif;	
+    border-collapse:collapse;
+    color:#ff9900;
+}
+
+#todoform th {
+    padding: 3px;
+    font: bold 15px arial, verdana, helvetica, sans-serif;		
+}
+#todoform td {	
+    padding:3px;
+    line-height: 200%;
+}
+
+#todoform input[type="email"] {	
+    margin-bottom:10px;
+    height:40px;
+    background:url(img/text-area.jpg);	
+    border:1px solid #DBDBDB;	
+    padding-left: 10px;
+}
+
+#todoform input[type="tel"] {	
+    margin-bottom:10px;
+    height:40px;
+    background:url(img/text-area.jpg);	
+    border:1px solid #DBDBDB;	
+    padding-left: 10px;
+}
+
+#todoform input[type="text"] {	
+    margin-bottom:10px;
+    height:40px;
+    background:url(img/text-area.jpg);	
+    border:1px solid #DBDBDB;	
+    padding-left: 10px;
+}
+
+#todoform input[type="checkbox"] {	
+    margin-bottom:10px;
+    height:15px;
+    padding-left: 10px;    
+}
+
+#todoform textarea {
+    width: 450px;
+    height:150px;
+    background:url(../img/text-area.jpg) top #fff repeat-x;	
+    border:1px solid #DBDBDB;	
+    padding: 10px 0 0 10px;
+}
+
+#todoform input.botao {	
+    background:url(../img/botao.jpg);
+    width:90px;
+    color:#ffffff;
+    text-align:center;
+    border:2px solid #ffffff;
+    cursor: pointer;
+    height: 40px;
+}	

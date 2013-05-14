@@ -1,0 +1,152 @@
+* { margin:0; padding:0;}
+
+body { color:#FFF; font-family: Arial; background:url(../img/body.jpg) #fff no-repeat center top; font-size:12px;}
+
+br{ margin:20px;}
+h2{ color:#FFF; margin:17px 0 40px 0; font-size:19px;}
+h3{ margin-top:20px;}
+h2, h3, h4, h5, h6{ font-family: 'ABeeZee', sans-serif;}
+h4{ color:#1E6F46; font-size:42px;}
+h5{ color:#252525; font-size:24px;}
+h6{ color:#26B388; font-size:20px;}
+
+p{ margin:10px 15px 10px 15px;}
+
+.menu{ float:left; 
+    padding:33px 25px 30px 25px;
+    margin:0 0px 0 0px;
+    list-style:none;
+	
+	}
+.menu:hover{
+	background:url(../img/menu.jpg); color:#333;
+	
+	}
+
+
+a{  font-family: 'ABeeZee', sans-serif;
+    text-decoration:none; 
+    font-size:14px; 
+    color:#fff; 
+    margin:0;
+}
+
+.tabela, .tabela2 , .tabela3 , .tabela4 , .tabela5 { 
+    padding:0 10px 0 10px;
+}
+.tabela{ background:url(../img/tabela.jpg); 
+         border-bottom:2px solid #228E66;}
+.tabela2{ background:url(../img/tabela2.jpg); border-bottom:2px solid #fff;}
+.tabela3{ background:url(../img/tabela3.jpg); border-bottom:2px solid #fff;}
+.tabela4{ background:url(../img/tabela4.jpg); }
+.tabela5{ background:url(../img/tabela5.jpg); }
+
+#content{
+    width:100%;
+    height:100%;
+    margin:0 auto;
+    left:0;
+}
+
+#total{ width:920px; margin:0 auto;}
+
+#header{ 
+    width:100%;
+    margin: 0 auto;
+    margin-top:10px;
+    background:url(../img/header.jp) center;
+
+}
+
+#principal{ 
+    width:100%;
+    margin: 0 auto;
+    background-color:#1C4615;
+
+}
+
+#bloco{ 
+    width:920px;	
+    margin-top:10px;
+	margin: 0 auto;
+}
+
+#interna{ 
+    width:920px;
+	height:800px;
+	margin: 0 auto;
+	margin-top:40px;
+	margin-bottom:20px;
+}
+
+#interna iframe
+{   
+  height:100%;
+
+ 
+}
+
+
+#interna2{ 
+    width:920px;	
+    margin: 0 auto;
+}
+
+.left{margin-left:25px;}
+.float-r{ float:right;}
+.float-l{ float:left;}
+.m-top{ margin-top:20px;}
+
+#img{
+    width:290px;	
+    height:120px;
+    float:left;
+    margin:0px 0 25px 0;
+}
+
+.base-destaques{ 
+    width:280px;	
+    height:20px;
+    border-top: 1px #DBDBDB solid;
+    margin-top:20px;
+    padding-top:15px;
+    padding-left: 0px;
+    text-align:left;
+}
+
+#destaques{ 
+    color:#454545;
+    width:290px;
+    float:right;
+    padding-bottom:30px;
+    margin-bottom:40px;
+    background:url(../img/destaques.png) top no-repeat;
+    text-align:center;
+}
+
+#logo{
+    width:250px;
+    height:180px;
+    margin: 0 auto;
+}
+
+#menu{
+    text-align:center;
+    width: 750px;
+    padding-bottom:20px;
+    padding-left:170px;
+    border-bottom:0px solid #8B8B8B;
+    height:42px;
+    margin: 0 auto;
+    background:url(../img/menu.png);
+}
+
+#rodape{
+    width: 100%;
+    padding-top:5px;
+	margin-top:10px;
+    height:125px;
+	float:right;
+    background:url(../img/rodape.png) no-repeat #165A41;
+}
+

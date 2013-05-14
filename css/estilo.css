@@ -1,0 +1,240 @@
+body
+{
+    background: url(../img/bgw.gif);
+    height: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: normal;
+}
+
+img
+{
+	border: none;
+}
+
+html
+{
+    height: 100%;
+}
+
+a
+{
+    text-transform: none;
+    color: #333;
+}
+
+ul
+{
+    display: block;
+    list-style-type: disc;
+    -webkut-margin-before: 1em;
+    -webkut-margin-after: 1em;
+    -webkut-margin-start: 0px;
+    -webkut-margin-end: 0px;
+    -webkut-padding-start: 40px;
+}
+
+li
+{
+    list-style: none;
+    text-align: -webkit-match-parent;
+}
+
+#tudo
+{
+    width: 990px;
+    margin: 0 auto;
+    min-height: 100%;
+    background-color: #fff;
+}
+
+#rodape
+{
+    background: #DDD;
+    width: 100%;
+    padding: 10px 0 10px;
+}
+
+#rodape h4
+{
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+    font-size: 123.1%;
+    line-height: 16px;
+    margin-bottom: 9px;
+    text-transform: uppercase;
+}
+
+#rodape a
+{
+    color: #A8A8A8;
+}
+
+#copyright
+{
+    clear: both;
+    display: block;
+    font-size: 85%;
+    padding: 18px 0 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.box
+{
+    padding: 47px 0 27px;
+    margin: 0 auto;
+    width: 960px;
+    position: relative;
+}
+
+.coluna
+{
+    float: left;
+    margin: 0 40px 0 0;
+    width: 160px;
+    display: inline;
+}
+
+.sitemap li
+{
+    display: inline;
+    float: left;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin: 0 10px;
+}
+
+.sitemap a
+{
+    font-weight: bold;
+    text-decoration: none;
+    color: #777;
+}
+
+#logo
+{
+    margin: 0 auto;
+    padding-left: 30px;
+}
+
+#divmenu
+{
+    margin: 0 auto;
+   	padding-left : 20px;
+}
+
+#conteudoIndex
+{
+    padding-top: 20px;
+    background-color: #FFF;
+    height: auto;
+}
+
+#conteudo
+{
+    background-color: #FFF;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    height: auto;
+}
+
+#conteudo p
+{
+    padding-top: 10px;
+    font-family: Helvetica,Arial,sans-serif;;
+    font-size: 14px;
+    color: #333;
+    line-height: 150%;  
+    text-align: justify;
+}
+
+#conteudo li
+{
+    list-style: disc;
+}
+
+#conteudo textarea
+{
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+.border
+{ 
+    border:1px solid #000;
+    width:auto;
+}
+
+.input
+{
+    font-family: Verdana;
+    font-size: 15px;
+    color: #00000;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    text-align: center;
+}
+
+/* CSS MENU NOVO */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    float: left;
+    margin: 10px;
+}
+
+#home {
+    display: block;
+    padding: 30px;
+}
+#home-button {
+    opacity: 1;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+#empresa {
+    display: none;
+    padding: 30px;
+}
+#empresa-button {
+    opacity: 0.5;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+#tecnologias 
+{
+    display: none;
+    padding: 30px;
+}
+#tecnologias-button 
+{
+    opacity: 0.5;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+#solucoes {
+    display: none;
+    padding: 30px;
+}
+#solucoes-button {
+    opacity: 0.5;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+#contato {
+    display: none;
+    padding: 30px;
+}
+#contato-button {
+    opacity: 0.5;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}

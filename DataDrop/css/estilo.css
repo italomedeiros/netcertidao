@@ -1,0 +1,43 @@
+body
+{
+    background-color: #62c4ad; 
+    margin: 10px 10px 10px;
+}
+
+table th
+{
+    text-align: center;
+    font-weight: bold;
+}
+
+table td
+{
+    font-weight: lighter;
+}
+
+.border 
+{
+    padding-bottom: 1px; 
+    padding-left: 1px; 
+    padding-right: 1px; 
+    padding-top: 1px;
+    border: #CCC 1px solid;
+}
+.input1 
+{
+    background:url(../../img/botao.jpg);
+    width:90px;
+    color:#ffffff;
+    text-align:center;
+    border:2px solid #ffffff;
+    cursor: pointer;
+    height: 40px;
+    /*
+    font-family: Verdana;
+    font-size: 12px;
+    color: #000000;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    text-align: center;
+    */
+}
