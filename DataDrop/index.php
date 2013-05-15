@@ -79,8 +79,8 @@
             Secretaria da Fazenda do Estado de Minas Gerais.<br />
             (3) Campo Inscrição Municipal, torna-se obrigatório para a emissão 
             da certidão SEFIN Belo Horizonte e SEFIN Recife.<br />
-            (4) Campo Senha_Consulta Prev., torna-se obrigatório para a emissão 
-            da certidão Consulta Regularidade Contribuições Previdenciária (Consulta Prev.).<br />
+            (4) Campo Senha_Consulta Prev., torna-se obrigatório para a 
+            Consulta Regularidade Contribuições Previdenciária (Consulta Prev.).<br />
             Para efetuar esta consulta é necessário senha. 
             A senha pode ser obtida em uma Unidade de Atendimento da Receita Federal do Brasil.<br />
             <span style='color: red'>Obs.: Utilizar o caractere "x" para indicar o tipo de certidão escolhida (sem as aspas).</span>
