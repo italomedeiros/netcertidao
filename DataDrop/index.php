@@ -38,7 +38,7 @@
                 <th>Senha_Consulta Prev.(4)</th>
                 <th>CRF</th>
                 <th>SRF/PGFN</th>
-                <th>DATAPREV3</th>
+                <th>CND Prev.</th>
                 <th>E-mail 2</th>
                 <th>E-mail 3</th>
             </tr>
