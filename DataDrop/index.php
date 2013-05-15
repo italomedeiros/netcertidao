@@ -11,11 +11,11 @@
             <span style="font-size: 20px; font-style: "><u>Instruções:</u></span><br />
             Passo 1: Crie um documento de Excel preenchidas com as informações <br />
             Passo 1.1: Não é necessário o preenchimento do cabeçalho (1ª linha), 
-            preencha somente as informações do CNPJ. <br />
+            preencha somente as informações referentes ao CNPJ. <br />
             Respeite o preenchimento das informações que são obrigatórias 
             (a descrição sobre quais dados são obrigatórios estão listadas 
-            abaixo do template). <br />
-            Passo 1.2: É importante que seja respeitado o posicionamentos de cada 
+            abaixo da opção Baixar Template!). <br />
+            Passo 1.2: É importante que seja respeitado os posicionamentos de cada 
             informação (coluna), conforme o template abaixo. <br />
             Passo 2: Salve o arquivo como tipo "CSV", por exemplo: "importacao.csv".<br />
             Passo 3: Faça o upload do arquivo salvo conforme o passo 2, 
