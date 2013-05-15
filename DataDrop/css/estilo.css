@@ -1,7 +1,18 @@
 body
 {
-    background-color: #62c4ad; 
+    background-color: #c4fff1; 
     margin: 10px 10px 10px;
+}
+
+button
+{
+    background: url(../../img/botao.jpg);
+    width: 130px;
+    color: #ffffff;
+    text-align: center;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    height: 40px;   
 }
 
 table th
@@ -25,19 +36,11 @@ table td
 }
 .input1 
 {
-    background:url(../../img/botao.jpg);
-    width:90px;
-    color:#ffffff;
-    text-align:center;
-    border:2px solid #ffffff;
-    cursor: pointer;
-    height: 40px;
-    /*
-    font-family: Verdana;
-    font-size: 12px;
-    color: #000000;
-    background: #FFFFFF;
-    border: 1px solid #000000;
+    background: url(../../img/botao.jpg);
+    width: 90px;
+    color: #ffffff;
     text-align: center;
-    */
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    height: 40px;    
 }
