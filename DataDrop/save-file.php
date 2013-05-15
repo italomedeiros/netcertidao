@@ -188,7 +188,7 @@
                     $sefaz = "0";
                 }
                 ///*********
-                if ($data[8] || $data[8] == "X")
+                if ($data[8] == "x" || $data[8] == "X")
                 {
                     $sefin = "1";
                 }
@@ -235,13 +235,23 @@
             }
 
             $consulta = mysql_query("SELECT idCnpj FROM cnpj WHERE idCnpj = '$idCnpj'") or die("ERRO NO SQL: 1" . mysql_error());
+            $consulta2 = mysql_query("SELECT cnpj_idCnpj FROM cnpj_empresa WHERE cnpj_idCnpj = '$idCnpj'
+                        AND empresa_idEscritorio = '$empresa_idEscritorio'") or die("ERRO NO SQL: 1" . mysql_error());
 
             if (mysql_num_rows($consulta) == 1)
             {
-                //create2
-                mysql_query("INSERT INTO cnpj_empresa (empresa_idEscritorio, cnpj_idCnpj,
+                if (mysql_num_rows($consulta2) >= 1)
+                {
+                    //nada
+                }
+                else
+                {
+                    //create2
+                    mysql_query("INSERT INTO cnpj_empresa (empresa_idEscritorio, cnpj_idCnpj,
                     usuario_login, email)
-                    VALUES ('$empresa_idEscritorio', '$cnpj_idCnpj', '$usuario_login', '$email')") or die("ERRO NO SQL: 2" . mysql_error());
+                    VALUES ('$empresa_idEscritorio', '$cnpj_idCnpj', '$usuario_login', '$email')") 
+                    or die("ERRO NO SQL: 2" . mysql_error());
+                }
             }
             else
             {
@@ -253,10 +263,18 @@
                     '$inscricao_municipal', '$UF', '$cidade', '$cpf_mg',
                     '$senha_mg', '$senha_rf', '$email2', '$email3')") or die("ERRO NO SQL: 1" . mysql_error());
 
-                //create2
-                mysql_query("INSERT INTO cnpj_empresa (empresa_idEscritorio, cnpj_idCnpj,
+                if (mysql_num_rows($consulta2) >= 1)
+                {
+                    //nada
+                }
+                else
+                {
+                    //create2
+                    mysql_query("INSERT INTO cnpj_empresa (empresa_idEscritorio, cnpj_idCnpj,
                     usuario_login, email)
-                    VALUES ('$empresa_idEscritorio', '$cnpj_idCnpj', '$usuario_login', '$email')") or die("ERRO NO SQL: 2" . mysql_error());
+                    VALUES ('$empresa_idEscritorio', '$cnpj_idCnpj', '$usuario_login', '$email')") 
+                    or die("ERRO NO SQL: 2" . mysql_error());
+                }
             }
             //**************************
             for ($i = 0; $i < 26; $i++)
@@ -265,15 +283,14 @@
                 {
                     if ($sefaz == "1")
                     {
-                        $consulta = mysql_query("SELECT cnpj_idCnpj, empresa_idEscritorio,
-                            scripts_idScript FROM certidao_contratada 
+                        $consulta = mysql_query("SELECT * FROM certidao_contratada 
                             WHERE cnpj_idCnpj = '$idCnpj' 
                                 AND empresa_idEscritorio = '$empresa_idEscritorio'
-                                AND scripts_idScript = $scripts_idScript[$i]") or die("ERRO NO SQL: 1" . mysql_error());
+                                AND scripts_idScript = $scripts_idScript[$i]") or die("1ERRO NO SQL: " . mysql_error());
 
-                        if (mysql_num_rows($consulta) == 1)
+                        if (mysql_num_rows($consulta) >= 1)
                         {
-                            //nada
+                            //echo ("Já Existe SEFAZ");
                         }
                         else
                         {
@@ -296,15 +313,14 @@
                 {
                     if ($sefin == "1")
                     {
-                        $consulta = mysql_query("SELECT cnpj_idCnpj, empresa_idEscritorio,
-                            scripts_idScript FROM certidao_contratada 
+                        $consulta = mysql_query("SELECT * FROM certidao_contratada 
                             WHERE cnpj_idCnpj = '$idCnpj' 
                                 AND empresa_idEscritorio = '$empresa_idEscritorio'
-                                AND scripts_idScript = $scripts_idScript[$i]") or die("ERRO NO SQL: 1" . mysql_error());
+                                AND scripts_idScript = $scripts_idScript[$i]") or die("2ERRO NO SQL: " . mysql_error());
 
-                        if (mysql_num_rows($consulta) == 1)
+                        if (mysql_num_rows($consulta) >= 1)
                         {
-                            //nada
+                            //echo ("Já Existe SEFIN");
                         }
                         else
                         {
@@ -327,15 +343,14 @@
 
             if ($dp1 == "1")
             {
-                $consulta = mysql_query("SELECT cnpj_idCnpj, empresa_idEscritorio,
-                            scripts_idScript FROM certidao_contratada 
+                $consulta = mysql_query("SELECT * FROM certidao_contratada 
                             WHERE cnpj_idCnpj = '$idCnpj' 
                                 AND empresa_idEscritorio = '$empresa_idEscritorio'
-                                AND scripts_idScript = 29") or die("ERRO NO SQL: 1" . mysql_error());
+                                AND scripts_idScript = 29") or die("3ERRO NO SQL: " . mysql_error());
 
-                if (mysql_num_rows($consulta) == 1)
+                if (mysql_num_rows($consulta) >= 1)
                 {
-                    //nada
+                    //echo ("Já Existe DP1");
                 }
                 else
                 {
@@ -352,15 +367,14 @@
 
             if ($crf == "1")
             {
-                $consulta = mysql_query("SELECT cnpj_idCnpj, empresa_idEscritorio,
-                            scripts_idScript FROM certidao_contratada 
+                $consulta = mysql_query("SELECT * FROM certidao_contratada 
                             WHERE cnpj_idCnpj = '$idCnpj' 
                                 AND empresa_idEscritorio = '$empresa_idEscritorio'
-                                AND scripts_idScript = 28") or die("ERRO NO SQL: 1" . mysql_error());
+                                AND scripts_idScript = 28") or die("4ERRO NO SQL: " . mysql_error());
 
-                if (mysql_num_rows($consulta) == 1)
+                if (mysql_num_rows($consulta) >= 1)
                 {
-                    //nada
+                    //echo ("Já Existe CRF");
                 }
                 else
                 {
@@ -378,15 +392,14 @@
 
             if ($srf == "1")
             {
-                $consulta = mysql_query("SELECT cnpj_idCnpj, empresa_idEscritorio,
-                            scripts_idScript FROM certidao_contratada 
+                $consulta = mysql_query("SELECT * FROM certidao_contratada 
                             WHERE cnpj_idCnpj = '$idCnpj' 
                                 AND empresa_idEscritorio = '$empresa_idEscritorio'
-                                AND scripts_idScript = 55") or die("ERRO NO SQL: 1" . mysql_error());
+                                AND scripts_idScript = 55") or die("5ERRO NO SQL: " . mysql_error());
 
-                if (mysql_num_rows($consulta) == 1)
+                if (mysql_num_rows($consulta) >= 1)
                 {
-                    //nada
+                    //echo ("Já Existe SRF");
                 }
                 else
                 {
@@ -404,15 +417,14 @@
 
             if ($dp3 == "1")
             {
-                $consulta = mysql_query("SELECT cnpj_idCnpj, empresa_idEscritorio,
-                            scripts_idScript FROM certidao_contratada 
+                $consulta = mysql_query("SELECT * FROM certidao_contratada 
                             WHERE cnpj_idCnpj = '$idCnpj' 
                                 AND empresa_idEscritorio = '$empresa_idEscritorio'
-                                AND scripts_idScript = 68") or die("ERRO NO SQL: 1" . mysql_error());
+                                AND scripts_idScript = 68") or die("6ERRO NO SQL: " . mysql_error());
 
-                if (mysql_num_rows($consulta) == 1)
+                if (mysql_num_rows($consulta) >= 1)
                 {
-                    //nada
+                    //echo ("Já Existe DP3");
                 }
                 else
                 {
