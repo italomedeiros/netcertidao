@@ -143,38 +143,36 @@
                 {
                     $senha_rf = $data[11];
                 }
-                //E-MAIL1
-                if ($data[15] == null)
-                {
-                    $email = "";
-                }
-                else
-                {
-                    $email = $data[15];
-                }
                 //E-MAIL2
-                if ($data[16] == null)
+                if ($data[15] == null)
                 {
                     $email2 = "";
                 }
                 else
                 {
-                    $email2 = $data[16];
+                    $email2 = $data[15];
                 }
                 //E-MAIL3
-                if ($data[17] == null)
+                if ($data[16] == null)
                 {
                     $email3 = "";
                 }
                 else
                 {
-                    $email3 = $data[17];
+                    $email3 = $data[16];
                 }
 
                 //CNPJ_EMPRESA
                 $empresa_idEscritorio = $_POST['escritorio'];
                 $cnpj_idCnpj = $idCnpj;
                 $usuario_login = $_POST['usuario'];
+                
+                //E-MAIL1
+                $sql =  mysql_query("SELECT email FROM empresa WHERE idEscritorio = '$empresa_idEscritorio'") 
+                        or die("ERRO NO SQL: 1" . mysql_error());
+                
+                $linha = mysql_fetch_array($sql);
+                $email = $linha['email'];
 
                 //CERTIDAO_CONTRATADA
                 $dataHora = date("Y-m-d H:i:s");
